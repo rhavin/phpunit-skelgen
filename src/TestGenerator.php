@@ -279,7 +279,7 @@ class TestGenerator extends AbstractGenerator
                 }
 
                 if (!$assertAnnotationFound) {
-                    $methodTemplate = new \Text_Template(
+                    $methodTemplate = new \SebastianBergmann\Template\Template(
                         sprintf(
                             '%s%stemplate%sIncompleteTestMethod.tpl',
                             __DIR__,
@@ -301,7 +301,7 @@ class TestGenerator extends AbstractGenerator
             }
         }
 
-        $classTemplate = new \Text_Template(
+        $classTemplate = new \SebastianBergmann\Template\Template(
             sprintf(
                 '%s%stemplate%sTestClass.tpl',
                 __DIR__,

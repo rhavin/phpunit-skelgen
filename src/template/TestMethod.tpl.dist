@@ -1,7 +1,6 @@
 
     /**
      * Generated from @assert {annotation}.
-     *
      * @covers {className}::{origMethodName}
      */
     public function test{methodName}() : void
