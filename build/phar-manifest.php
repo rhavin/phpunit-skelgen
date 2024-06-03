@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-print 'phpunit/phpunit-skeleton-generator: ';
+print 'rhavin/phpunit-skelgen: ';
 
 $tag = @exec('git describe --tags 2>&1');
 

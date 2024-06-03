@@ -60,5 +60,6 @@ if (!$loaded) {
     );
 }
 
+
 $application = new SebastianBergmann\PHPUnit\SkeletonGenerator\CLI\Application;
 $application->run();
