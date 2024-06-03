@@ -7,10 +7,10 @@
     "authors": [
         {
             "name": "Sebastian Bergmann",
-            "email": "sebastian@phpunit.de",
+            "email": "sebastian@phpunit.de"
         }, {
             "name": ".rhavin",
-            "email": "rhavin@shadowtec.de",
+            "email": "rhavin@shadowtec.de"
         }        
     ],
     "support": {
