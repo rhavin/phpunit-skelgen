@@ -1,21 +1,23 @@
 {
-    "name": "phpunit/phpunit-skeleton-generator",
+    "name": "rhavin/phpunit-skelgen",
     "description": "Tool that can generate skeleton test classes from production code classes and vice versa",
     "keywords": ["phpunit", "xunit", "testing", "skeleton"],
-    "homepage": "https://github.com/sebastianbergmann/phpunit-skeleton-generator",
+    "homepage": "https://github.com/rhavin/phpunit-skelgen",
     "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Sebastian Bergmann",
             "email": "sebastian@phpunit.de",
-            "role": "lead"
-        }
+        }, {
+            "name": ".rhavin",
+            "email": "rhavin@shadowtec.de",
+        }        
     ],
     "support": {
-        "issues": "https://github.com/sebastianbergmann/phpunit-skeleton-generator/issues"
+        "issues": "https://github.com/rhavin/phpunit-skelgen/issues"
     },
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=7.4.0",
         "phpunit/php-text-template": "~1.2",
         "sebastian/version": "~1.0|~2.0",
         "symfony/console": "~2.4"
