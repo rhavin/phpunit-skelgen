@@ -45,9 +45,9 @@ namespace SebastianBergmann\PHPUnit\SkeletonGenerator\CLI;
 use SebastianBergmann\Version;
 use Symfony\Component\Console\Application as AbstractApplication;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\ArgvInput;
+// use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Input\ArrayInput;
+// use Symfony\Component\Console\Input\ArrayInput;
 
 /**
  * TextUI frontend for PHPUnit Skeleton Generator.
@@ -62,8 +62,8 @@ class Application extends AbstractApplication
 {
     public function __construct()
     {
-        $version = new Version('2.0.1', dirname(dirname(__DIR__)));
-        parent::__construct('phpunit-skelgen', $version->getVersion());
+        $version = new Version('2.1.1', dirname(dirname(__DIR__)));
+        parent::__construct('phpunit-skelgen', $version->asString());
 
         $this->add(new GenerateClassCommand);
         $this->add(new GenerateTestCommand);
@@ -77,12 +77,13 @@ class Application extends AbstractApplication
      *
      * @return integer 0 if everything went fine, or an error code
      */
+    #[\Override]
     public function doRun(InputInterface $input, OutputInterface $output)
     {
         if (!$input->hasParameterOption('--quiet')) {
             $output->write(
                 sprintf(
-                    "phpunit-skelgen %s by Sebastian Bergmann.\n\n",
+                    "phpunit-skelgen %s by ~.rhavin;).\n\n",
                     $this->getVersion()
                 )
             );
