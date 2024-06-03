@@ -149,7 +149,7 @@ class TestGenerator extends AbstractGenerator
     /**
      * @return string
      */
-    public function generate()
+    public function generate() : string
     {
         $class = new \ReflectionClass(
             $this->inClassName['fullyQualifiedClassName']

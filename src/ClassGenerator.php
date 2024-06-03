@@ -97,7 +97,8 @@ class ClassGenerator extends AbstractGenerator
     /**
      * @return string
      */
-    public function generate()
+    #[\Override]
+    public function generate() : string
     {
         $methods = '';
 
@@ -241,7 +242,7 @@ class ClassGenerator extends AbstractGenerator
      * @param  array $tokens
      * @return array
      */
-    protected function findVariablesThatReferenceClass(array $tokens)
+    protected function findVariablesThatReferenceClass(array $tokens) : array
     {
         $inNew     = false;
         $variables = array();
@@ -285,7 +286,7 @@ class ClassGenerator extends AbstractGenerator
      * @param  integer $start
      * @return mixed
      */
-    protected function findVariableName(array $tokens, $start)
+    protected function findVariableName(array $tokens, $start) : mixed
     {
         for ($i = $start - 1; $i >= 0; $i--) {
             if (is_array($tokens[$i]) && $tokens[$i][0] == T_VARIABLE) {
@@ -309,7 +310,7 @@ class ClassGenerator extends AbstractGenerator
      * @param  string $filename
      * @return array
      */
-    protected function getClassesInFile($filename)
+    protected function getClassesInFile($filename) : mixed
     {
         $result = array();
 
@@ -402,7 +403,7 @@ class ClassGenerator extends AbstractGenerator
 
             switch ($tokens[$i][0]) {
                 case T_HALT_COMPILER:
-                    return;
+                    return null;
                     break;
 
                 case T_NAMESPACE:

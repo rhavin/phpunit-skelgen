@@ -2,7 +2,7 @@
     /**
      * @todo Implement {methodName}().
      */
-    public function {methodName}()
+    public function {methodName}() : void
     {
         // Remove the following line when you implement this method.
         throw new RuntimeException('Not yet implemented.');

@@ -4,7 +4,7 @@
      * @covers {className}::{origMethodName}
      * @expectedException {expected}
      */
-    public function test{methodName}()
+    public function test{methodName}() : void
     {
         $this->object->{origMethodName}({arguments});
     }
