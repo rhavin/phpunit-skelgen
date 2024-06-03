@@ -42,12 +42,9 @@
 
 namespace SebastianBergmann\PHPUnit\SkeletonGenerator\CLI;
 
-use SebastianBergmann\Version;
 use Symfony\Component\Console\Application as AbstractApplication;
 use Symfony\Component\Console\Input\InputInterface;
-// use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\OutputInterface;
-// use Symfony\Component\Console\Input\ArrayInput;
 
 /**
  * TextUI frontend for PHPUnit Skeleton Generator.
@@ -62,8 +59,8 @@ class Application extends AbstractApplication
 {
     public function __construct()
     {
-        $version = new Version('2.1.1', dirname(dirname(__DIR__)));
-        parent::__construct('phpunit-skelgen', $version->asString());
+        $version = '2.2.1';
+        parent::__construct('phpunit-skelgen', $version);
 
         $this->add(new GenerateClassCommand);
         $this->add(new GenerateTestCommand);
