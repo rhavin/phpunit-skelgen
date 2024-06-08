@@ -6,7 +6,7 @@ class {testClassName} extends {namespaceSeparator}PHPUnit\Framework\TestCase
     /**
      * @var {className}
      */
-    protected $object;
+    protected ?{className} $object = null;
 
     /**
      * Sets up the fixture, for example, opens a network connection.
