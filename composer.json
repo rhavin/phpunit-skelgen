@@ -4,7 +4,7 @@
     "keywords": ["phpunit", "xunit", "testing", "skeleton"],
     "homepage": "https://github.com/rhavin/phpunit-skelgen",
     "license": "BSD-3-Clause",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "authors": [
         {
             "name": "Sebastian Bergmann",
